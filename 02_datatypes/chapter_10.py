@@ -12,8 +12,9 @@ del chai_recipe['liquid']
 
 chai_order = {"type": "Ginger Chai", "size": "Medium", "sugar": 1}
 
-print(f"Order details (keys): {chai_order.keys()}")
-print(f"Order details (values): {chai_order.values()}")
+print(f"Order details (keys): {chai_order.keys()}") # Order details (keys): dict_keys(['type', 'size', 'sugar'])
+# print(f"Order details (values): {chai_order.values()[0]}") TypeError: 'dict_values' object is not subscriptable
+print(f"Order details (values): {chai_order.values()}") # Order details (values): dict_values(['Ginger Chai', 'Medium', 1])
 print(f"Order details (items): {chai_order.items()}") #Order details (items): dict_items([('type', 'Ginger Chai'), ('size', 'Medium'), ('sugar', 1)]) The answer is an array and each item is a tuple.
 
 last_element = chai_order.popitem()
@@ -23,5 +24,5 @@ print(f"LAst item  : {last_element}")
 chai_order.update([('cardamom', 'crushed')])
 print(f"UPdated chai_order : {chai_order}")
 
-customer_note = chai_order.get("customer_note", "NO Note")
+customer_note = chai_order.get("customer_note", "No Note")
 print(f"customer_note is: {customer_note}")

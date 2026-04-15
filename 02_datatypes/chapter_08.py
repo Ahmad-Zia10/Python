@@ -1,4 +1,5 @@
 ingredients = ["water", "milk", "oolong"]
+# ingredients.extend("sugar") prints : ['water', 'milk', 'oolong', 's', 'u', 'g', 'a', 'r']
 ingredients.append("sugar")
 print(f"Ingredients of chai are :{ingredients}")
 
@@ -8,7 +9,7 @@ print(f"New ingredients : {ingredients}")
 spice_options = ["ginger", "pineapple", "chia seeds"]
 chai_ingredients = ["water", "milk"]
 
-chai_ingredients.extend(spice_options)
+chai_ingredients.append(spice_options)
 print(f"Chai Ingredients : {chai_ingredients}")
 
 chai_ingredients.insert(2,"black tea leaves")
