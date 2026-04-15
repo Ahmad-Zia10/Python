@@ -5,7 +5,7 @@ class  ChaiUtils:
         return [item.strip() for item in text.split(",")]
 
 raw = "water , milk, ginger, honey"    
-# print(ChaiUtils.clean_ingredients(raw))
+print(ChaiUtils.clean_ingredients(raw))
 
 obj = ChaiUtils()
 # print(obj.clean_ingredients(raw)) #ChaiUtils.clean_ingredients() takes 1 positional argument but 2 were given(when we did not use @staticmethod)

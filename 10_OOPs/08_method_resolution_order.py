@@ -11,6 +11,7 @@ class D(B, C):
     pass # this class does not have any property. It inherits the properties from class B, C, A. 
 
 chai = D()
+print(f"MRO of Object D : {D.mro()}")
 print(chai.label)
 
 # (MRO) in Python defines the sequence in which Python searches for methods and attributes in a class hierarchy,

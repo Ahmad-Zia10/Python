@@ -22,7 +22,7 @@ class ChaiShop:
         self.chai.prepare()
 
 class FancyChaiShop(ChaiShop):
-    chai_cls = MasalaChai # We are overriding the property derived fro base class ChaiShop, now this property references to class MasalaChai
+    chai_cls = MasalaChai # We are overriding the property derived from base class ChaiShop, now this property references to class MasalaChai
     #So it calls ChaiShop.__init__(fancy): This runs the line :
     #self.chai = self.chai_cls("Regular")
     #self is now fancy.
@@ -36,4 +36,4 @@ fancy = FancyChaiShop() # NOTE : FancyChaiShop does not define its own __init__,
 print(f"Calling serve on shop : {shop.serve()}")
 print(f"Calling serve on fancy : {fancy.serve()}")
 # fancy.chai_cls.add_spices() #MasalaChai.add_spices() missing 1 required positional argument: 'self'
-fancy.chai.add_spices()
+# fancy.chai.add_spices()

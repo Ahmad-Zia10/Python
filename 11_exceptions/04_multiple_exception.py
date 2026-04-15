@@ -9,4 +9,4 @@ def process_order(item, quantity):
         print("Quantity must be a number")
     
 process_order("ginger", 20)
-process_order("masala", {}) # if we pass "masala", "two" : we get "total cost is twotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwo" because of operator overloading.
+process_order("masala", 10) # if we pass "masala", "two" : we get "total cost is twotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwo" because of operator overloading.

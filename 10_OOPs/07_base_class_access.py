@@ -9,7 +9,8 @@ class Chai:
 #     def __init__(self, type_, strength, spice_level):
 #         self.type = type_
 #         self.strength = strength
-#         self.spice_level = spice_level
+#         self.spice_level = spice_level    
+
 
 # explicitly calling the base class constructor
 # class GingerChai(Chai):
