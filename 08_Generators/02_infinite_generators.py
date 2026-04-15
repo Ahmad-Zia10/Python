@@ -2,6 +2,7 @@ def refill():
     count  = 1
     while True:
         yield f"Refill #{count}"
+        print(f"After yield runs for {count} times")
         count += 1
 
 

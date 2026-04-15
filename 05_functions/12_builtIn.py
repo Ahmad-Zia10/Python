@@ -19,3 +19,5 @@ def generate_bill(chai=0, samosa=0):
     """
     total = chai*10 + samosa*15
     return total, "Thank you for visiting chaicode.com"
+
+print(generate_bill())

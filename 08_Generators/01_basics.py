@@ -29,5 +29,5 @@ print(next(authors))
 
 print(f"Id of authors vairable reference to generator object : {id(authors)}")
 
-temp = authors() # Error : 'generator' object is not callable
+# temp = authors() # Error : 'generator' object is not callable
 # print(temp)

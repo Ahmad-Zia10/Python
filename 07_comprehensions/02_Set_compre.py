@@ -25,3 +25,9 @@ recipes = {
 unique_ingredients = {item for ingredients in recipes.values() for item in ingredients}
 print(unique_ingredients)
 
+
+flattened = [y for x in [[1,2],[3,4],[5,6]] for y in x]
+print(f"Flattened List : {flattened}")
+
+positive_only = [item if item > 0 else 0 for item in [-3, 1, -2, 4, 0, -1, 5]]
+print(f"Repplacing negatives with zero : {positive_only}")

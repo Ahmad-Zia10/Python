@@ -11,10 +11,10 @@ def full_menu():
     yield from imported_chai()
 
 menu = full_menu()
-print(next(menu)) ##Masala Chai
-print(next(menu)) #Masala Chai Ginger Chai
-print(next(menu)) #Masala Chai Ginger Chai Matcha 
-print(next(menu)) #Masala Chai Ginger Chai Matcha Oolong
+print(next(menu)) # Masala Chai
+print(next(menu)) # Ginger Chai
+print(next(menu)) # Matcha 
+print(next(menu)) # Oolong
 
 import sys
 
